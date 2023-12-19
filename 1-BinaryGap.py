@@ -15,7 +15,7 @@
 # N is an integer within the range [1..2,147,483,647].
 
 
-def solution(N):
+def mySolution(N):
     binary = bin(N)[2:]
     max_gap = 0
     current_gap = 0
@@ -26,5 +26,3 @@ def solution(N):
         else:
             current_gap += 1
     return max_gap
-
-print(bin(1041))

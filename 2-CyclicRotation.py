@@ -35,16 +35,14 @@
 # each element of array A is an integer within the range [−1,000..1,000].
 # In your solution, focus on correctness. The performance of your solution will not be the focus of the assessment.
 
-
-# initial solution
-# def solution(A, K):
-#     temp = A.copy()
-#     for i in range(len(A)):
-#         temp[(i+K)%len(A)] = A[i]
-#     return temp
-
-
-# failed some tests
 def solution(A, K):
-    l = len(A)
-    return [A[abs(l-K+i)%l] for i in range(l)]
+    temp = A.copy()
+    for i in range(len(A)):
+        temp[(i+K)%len(A)] = A[i]
+    return temp
+
+
+# failed some tests but simpler so i like it
+# def solution(A, K):
+#     l = len(A)
+#     return [A[abs(l-K+i)%l] for i in range(l)]
