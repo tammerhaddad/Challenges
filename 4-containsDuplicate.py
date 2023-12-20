@@ -1,3 +1,5 @@
+# return if the array contains duplicates
+
 class mySolution(object):
     def containsDuplicate(self, nums):
         # just removes the duplicates and checks if its the same

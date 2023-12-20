@@ -1,3 +1,5 @@
+# checks if the given two arrays are anagrams of each other
+
 class mySolution(object):
     def isAnagram(self, s, t):
         # just sorts and checks if equal

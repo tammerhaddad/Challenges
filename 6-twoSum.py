@@ -1,4 +1,7 @@
-# also the correct solution
+# given an array and a number, 
+# return the indexes of the only two numbers that add up to the given number
+
+# also correct solution
 class mySolution(object):
     def twoSum(self, nums, target):
         dict = {}
