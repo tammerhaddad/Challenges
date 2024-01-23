@@ -24,7 +24,7 @@ class Solution(object):
         
         for i in range(len(freq)):
             if freq[i] != 0:
-# same as the last one, it just saves time by cutting the program if found false
+                # same as the last one, it just saves time by cutting the program if found false
                 return False
         
         return True

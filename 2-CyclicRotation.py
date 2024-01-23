@@ -3,10 +3,11 @@
 def mySolution(A, K):
     # copy so i dont overwrite
     temp = A.copy()
+    l = len(A)
     # loops through A
-    for i in range(len(A)):
+    for i in range(l):
         # changes the corresponding number in temp
-        temp[(i+K)%len(A)] = A[i]
+        temp[(i+K)%l] = A[i]
     # returns final solution
     return temp
 

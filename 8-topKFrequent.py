@@ -9,17 +9,17 @@ class mySolution(object):
         count = Counter(nums)
         # loops through and returns the k most common
         return [key for key, _ in count.most_common(k)]
-    
+
 class Solution(object):
     def topKFrequent(self, nums, k):
         hs = {}
         frq = {}
         
-        for i in xrange(0, len(nums)):
-            if nums[i] not in hs:
-                hs[nums[i]] = 1
+        for num in nums:
+            if num not in hs:
+                hs[num] = 1
             else:
-                hs[nums[i]] += 1
+                hs[num] += 1
 
         for z,v in hs.iteritems():
             if v not in frq:
@@ -29,10 +29,9 @@ class Solution(object):
         
         arr = []
         
-        for x in xrange(len(nums), 0, -1):
+        for x in range(len(nums), 0, -1):
             if x in frq:
-                
                 for i in frq[x]:
                     arr.append(i)
 
-        return [arr[x] for x in xrange(0, k)]
+        return arr[:k]

@@ -9,6 +9,25 @@ def mySolution(A):
 
     return i
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def Solution(A):
     max_val = max(A)
     if max_val < 0:
